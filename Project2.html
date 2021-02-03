@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Autonomous Car</title>
+		<title>Autonomous Car V</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -42,34 +42,42 @@
 							<section class="post">
 								<header class="major">
 									
-									<h1>Autonomous Car</h1>
-									<p>An experiment in merging hardware and software skills.</p>
+									<h1>Autonomous Car V0.2</h1>
+									<p>A HackED 2021 Group Project</p>
 								</header>
+								<div class="image main"><iframe width="1280" height="720" src="https://www.youtube.com/embed/O-fXvNrn_vc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+								<h3>Intro</h3>
+								<p>
+									During HackEd 2021, a hackathon put on by the UofA, me and 2 friends decided to try to expand a previous remote control car that we made and have it work over the internet.
+									This version of the project is a remote control car that is connected view bluetooth to a laptop. A program on the laptop with an AWS server as an intermediary talks to
+									a client at my partners house and allows for him to control the car as seen in the video above. 
+								</p>
+								<p>
+									Although this project builds on onother project that was done in the past, everything is rebuilt from scratch and nothing is reused. My role for
+									the hackathon was the physical car itself and the laptop client that it is connected to view bluetooth. I got a chance to work on some of my circuit
+									building skills and used websockets for the first time. 
+								</p>
+								<h3>The Car</h3>
+								<p>
+									For the car, I ended up buying a kick that came with the wheels and body to make construction easier and focus more on the circuitry. Everything other then
+									the wheels and body were parts picked and put together by ourselves. The brain of the car is an arduino powered by a 9v battery that drives an H-Bridge chip
+									used to control the 4 wheels which are powered by 2 other batteries. The arduino serial ports are connected to a bluetooth module that transmits and receives
+									data from the laptop. The car also includes a compass and ultrasound proximity sensor on the front whos data is passed onto the laptop.
+								</p>
+								<h3>The Laptop</h3>
+								<p>
+									The laptop runs a simple C# client that will connects to the COM port the bluetooth car is attached to and send commands via serial communication to the 
+									car. It also receives sensor data from the car for use in future applications. Using websockets, the laptop connects to an AWS server where it receives 
+									commands relayed through the server from a client in another part of the city.
+								</p>
+								<h3>Future Plans</h3>
+								<p>
+									As you can probably tell by the title, this project is not yet finished and more work will be done in the future. The next big step is to cut out the 
+									bluetooth and middleman client via the use of a ESP8266 wifi chip so that the car can function independantly as long as a wifi connection to the 
+									internet is available. A phone app and website to control the car, and a camera installation are also planned as a possible next step.
+								</p>
+								
 								<div class="image main"><img src="images/CarGif.gif" alt="" /></div>
-								<p>Built using the arduino platform, this car has an array of sensors to help it navigate the real world without the need for any user input. The limitations of imbedded systems
-									became apparent early as a severe lack of memory lead to the project being spit into a car side and a server side with bluetooth communication in between them via Serial communication.
-									This project is doing all the "thinking" on a laptop running the server application and relaying commands back to the car, while it relays its sensor data in return. The biggest
-									takeaway from this project so far is learning how to have multiple different applications talk to each other. Another benefit is that it reinforced my knowledge in other areas
-									that I have not had the opportunity to practice this summer. This project has also been a great introduction into using C although a breif one.
-								</p>
-								<p>The hardware side of things is where alot of knowledge was really gained. This project has for the first time let me apply my electical knowledge, to this point wholy theoretical, and use
-									it to build a working machine that does more then just give off heat from some resistors. From learning how basic digital systems such as the arduino work to using sensors to
-									understand the world around the car, all of it has been a great help understanding in a more realistic way how electricity works. 
-								</p>
-								<p>As it stands currently this is an incomeplete project. There are still several modifications that I want to make to the software and hardware side of things
-									that will be listed in a ToDo list below. Currently the car can avoid obstacles with no user input and knows what direction its facing
-									but that is about all. A wall has been hit in my understanding and requires some serious research before the goal of a robot that understands its
-									location in the environment and navigate it autonamously can be reached. Currently my research is heading in the direction of SLAM (Simultanious location and mapping)
-									and updates will be made to this page as milestones are hit.
-								</p>
-								<h2>ToDo</h2>
-								<ul>
-									<li>Have the server ping all open ports on startup and list all available machines</li>
-									<li>Rework the movement system to work based on the compass instead of time</li>
-									<li>Recreate the autonomous evasion algorithm using the compass for more precise obstacle avoidance</li>
-									<li>Update the UI from windows forms to a more modern solution</li>
-									<li>Slam Capability</li>
-								</ul>
 							</section>
 
 					</div>
