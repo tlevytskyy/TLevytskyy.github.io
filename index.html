@@ -1,141 +1,233 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Taras' Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html class="no-js" lang="en">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Hello!<br />
-						I am Taras Levytskyy</h1>
-						<p>A Computer Engineering Technologies student at NAIT,<br/></a></p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+<body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
 
-				<!-- Header -->
-					<header id="header">
-						
-					</header>
+    <div id="lead" style="background: url(./images/PersonalPhoto.JPG);">
+        <div id="lead-content">
+            <h1>Taras Levytskyy</h1>
+            <h2>Software Engineer</h2>
+            <a href="./files/TarasLevytskyy_Resume.pdf" download class="btn-rounded-white">Download Resume</a>
+        </div>
+        <!-- End #lead-content -->
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="AboutMe.html">About Me</a></li>
-							
-						</ul>
-						<ul class="icons">
-							
-							<li><a href="https://www.linkedin.com/in/taras-levytskyy-1993361a2/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-							<li><a href="https://github.com/tlevytskyy" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+        <div id="lead-overlay"></div>
 
-				<!-- Main -->
-					<div id="main">
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									
-									<h2>This is my Portfolio<br />
-									</h2>
-									<p>A collection of my projects, new and old, and a snapshot into my skills and how i have grown as a programmer since my introduction into the field.</p>
-								</header>
-								<a class="image main"><img src="images/Capture.PNG" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="AboutMe.html" class="button large">About Me</a></li>
-								</ul>
-							</article>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Hey I'm Taras, a passionate programmer and enthusiest of anything computer related. I have called Edmonton my coming on 20 years now.
+                            Computers have facinated me ever since I was old enough to understand them leading me to tinker and repair them since an early age.
+                            Recent I've taken this passion to the next level by obtaining a Computer Enginnering degree from the Northern Alberta Institute of Technolog, or NAIT for short,
+                            in Edmonton where I got the chance to explore my software and hardware engineering passions and develop the skills every programmer should have.
+                        <br>
+                        <br>
+                        Outside of tinkering with technology I am also an avid Gamer, love swimming, and riding my bike.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<span class="date">February, 2020</span>
-										<h2><a href="Project1.html">A Text Based RPG</h2>
-									</header>
-									<a href="Project1.html" class="image fit"><img src="images/SuperAdventure.PNG" alt="" /></a>
-									<p>My first project. A text based rpg ,undertaken with a fellow classmate, that features classes, quests, combat and skills, along with a dynamic minimap. Built using C# and CDrawer with Git version control. </p>
-									<ul class="actions special">
-										<li><a href="https://github.com/tlevytskyy/MyFirstAdventure" class="button">See Code</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">July, 2020</span>
-										<h2><a href="Project2.html">Autonomous Car V0.2<br />
-										</a></h2>
-									</header>
-									<a href="Project2.html" class="image fit"><img src="images/Car.jpg" alt="" /></a>
-									<p>A mixed Hardware/Software project where a arduino based car is controlled via the internet by someone in a different part of the world.</p>
-									<ul class="actions special">
-										<li><a href="https://devpost.com/software/internet-connected-robot-car" class="button">Devpost</a></li>
-										<li><a href="https://github.com/AFRBots" class="button">Code Repos</a></li>
-									</ul>
-								</article>
-								
-							</section>
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="Aug 2020 – Present">
+                <h3>Fuzion Donuts</h3>
+                <h4>Freelance Software Developer</h4>
+                <p>
+                   <ul style="color: #868d92;">
+                       <li>Designed, developed, and deployed an inventory
+                        management solution</li>
+                       <li>A full stack application using ASP.NET and SQL along with
+                        other web technologies</li>
+                       <li>Worked closely with the owner to develop a web
+                        application that meets all business requirements</li>
+                   </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
 
-						<!-- Footer -->
-							
-					</div>
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>(NAIT) Northern Alberta Institute of Technology</h3>
+            <span class="education-date">January 2020 - December 2021</span>
+            <h4 style="color: #CA3E47;">Computer Engineering Technology 4.0 GPA</h4>
+            <p>
+                <b>Comprehensive Curriculum Covering:</b>
+                <br>
+                C# Developement | OOP Programming | Data Structures and
+                Algorithms
+                <br>
+                Front-End Web | Databases | Client-Server Programming
+                <br>
+                Electrical Design | Embedded Systems | Digital Logic
+                <br>
+                Project Management | Capstone Project Experience
+            </p>
+        </div>
+        <!-- End .education-block -->
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section class="split contact">
-							<section>
-								<h3>Phone</h3>
-								<p>(587) 341-5929</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p>tlevy.work@gmail.com</a></p>
-							</section>
-						</section>
-						<section class="split contact">
-							
-							
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/taras-levytskyy-1993361a2/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-									<li><a href="https://github.com/tlevytskyy" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul></ul>
-					</div>
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/project.jpg" />
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Remote Control Snow Clearing Rover</h3>
+                        <p>
+                            <ul style="color: #868d92; text-align: left;">
+                                <li>A web-capable snow clearing rover that is controlled remotely through a website</li>
+                                <li>Uses a web server on azure to communicate with and transmit commands to a wifi receiver on the rover</li>
+                                <li>Includes bare metal hardware drivers for various motors and other components</li>
+                                <li>Implemented using C,C#,Javascript,ASP.NET,Azure</li>
+                            </ul>
+                        </p>
+                        <a href="https://github.com/Levy-Ting/Remote-Control_Snow-Clearing_Rover---Capstone">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
 
-			</div>
+                
+                <!-- End .project -->
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>C#</li>
+            <li>C/C++</li>
+            <li>Javascript</li>
+            <li>.NET</li>
+            <li>ASP.NET</li>
+            <li>PHP</li>
+            <li>SQL</li>
+            <li>CSS</li>
+            <li>HTML</li>
+            <li>Networking</li>
+            <li>Azure</li>
+            <li>Git</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
 
-	</body>
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+            <form method="POST" action="https://formspree.io/email@email.com">
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="_replyto" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; 2020 Taras Levytskyy
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/tlevytskyy" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://shorturl.at/iEY01" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+</body>
+
 </html>
